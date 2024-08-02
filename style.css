@@ -74,20 +74,32 @@
     width: 50%;
 }
 
-.div-text h1 {
+.text h1 {
     color: #ffffff;
     text-shadow: 0 0 10px #000;
     font-size: 60px;
     font-family: "Poppins", sans-serif;
     font-weight: 1000;
+    line-height:85px;
+    margin: 0;
+    height: 65px;
+    overflow: hidden;
 }
-
-.div-text h2 {
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text h2 {
     color: #fff;
     font-size: 40px;
     text-shadow: 0 0 10px #000;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
+    line-height:55px;
+    height: 55px;
+    margin: 0;
 }
 
 .btn-div {
@@ -111,6 +123,8 @@
     text-decoration: none;
     margin-top: 10px;
     border: 2px solid #000;
+    transition-duration:.1s;
+    transition-delay: 0.1s;
 }
 
 a {
@@ -123,15 +137,17 @@ a {
 .btn a {
     width: 150px;
     height: 40px;
+  
 }
 
 .btn:hover {
     width: 155px;
     height: 45px;
     margin-top: 5px;
-    transition: 0.3s;
     font-size: 20px;
     border: 2px solid #34db53;
+    transition-duration:.1s;
+    transition-delay: 0.1s;
 }
 
 .section-2 {
@@ -188,7 +204,15 @@ a {
 .slider-span {
     visibility: hidden;
 }
-
+.img1 img{
+    transition:all  .3s ease-in-out;
+    transition-delay: 0.1s;
+}
+.img1 img:hover , .img2 img:hover , .img3 img:hover{
+    border: 4px solid #fff;
+    transition:all .3s ease-in-out;
+    transition-delay: 0.1s;
+}
 .img1 img,
 .img2 img,
 .img3 img {
@@ -261,7 +285,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    height: 10vh;
+    height: 7vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -269,7 +293,7 @@ a {
 }
 
 .made div {
-    height: 10vh;
+    height:7vh;
     backdrop-filter: blur(8px);
     width: 100%;
     display: flex;
@@ -280,12 +304,14 @@ a {
 }
 
 div h1 a {
-    font-size: 35px;
+    font-size: 25px;
 }
-
+div h1 a{
+    font-size: 30px;
+}
 div h1 a:hover {
     transition: 0.3s ease-in-out;
-    font-size: 40px;
+    font-size:32px;
 }
 
 
